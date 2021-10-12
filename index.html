@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="fontawesome/js/all.js"></script>    <title>Bookary</title>
+</head>
+<body>
+    <div class="main-wrapper">
+    <header id='headerMain'>
+        <i id = "logo" class="fas fa-book-open"></i>
+        <h1 id='titleMain'>Your Library</h1>
+    </header>
+    <div id="main-body">
+        <div id='add-card' class="book-card" onclick="formView()">
+            <i class="fas fa-plus-circle" id='add-icon'></i>
+        </div>
+    </div>
+                <!-- *************************Form Start************************* -->
+        <form id="book-form" action="#">
+            <h2 class="form-title">CREATE A BOOK CARD</h2>
+            <div class="form-box">
+                <label for="book-name">Book Name</label>
+                <input type="text" id="book-name"  placeholder="ex The Hobbit"   tab-index="1">
+            </div>
+            
+            <div class="form-box">
+                <label for="author-name">Author Name</label>
+                <input type="text" id="author-name"  placeholder="ex J. R. R. Tolkien"   tab-index="2">
+            </div>
+            
+            <div class="form-box">
+                <label for="book-pages">Pages</label>
+                <input type="number"  min="0" id="book-pages" placeholder="ex 310"   tab-index="3">
+            </div>
+            
+            <!-- Radio buttons section -->
+            <div class="form-box">
+            <label for="recommend">Did you read the book?</label>
+            <div id="status-radio">
+            <input type="radio" id="yes" name="status" value="yes"  >
+            <label for="yes" >Yes</label>
+
+            <input type="radio" id="no" name="status" value="no">
+            <label for="no">No</label>
+            </div>
+        </div>
+            <div class="form-box-buttons">
+                <button class="form-button" id="create-button" onClick="submitButton()">Create</button>
+                <button class="form-button" id="cancel-button" onClick='cancelButton()'>Cancel</button>
+            </div>
+        </form>
+                <!-- *************************Form Start************************* -->
+    
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
