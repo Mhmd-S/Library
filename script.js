@@ -29,7 +29,7 @@ function formView(){
 function cancelButton(){
   enableScroll();
   document.getElementById('book-form').classList.remove('active');
-  document.getElementById('book-form').reset();
+  // document.getElementById('book-form').reset();
   let cards = document.querySelectorAll('.book-card');
   cards.forEach(card => card.classList.remove('disable'));
 }

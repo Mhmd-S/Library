@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .main-wrapper{
@@ -145,7 +146,7 @@
     position: fixed;
     transform: translate(-50%,-50%);
     top:50%;
-    left:-300%;
+    left:500%;
     border: 3px solid black;
     border-radius: 5px;
     background-color: #ffaebbfe;
@@ -153,7 +154,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.65rem;
+    font-size: 1.45rem;
     color:black;
     font-weight: 500;
     visibility: invisible;
@@ -161,7 +162,7 @@
 
 #book-form.active {
     left:50%;
-
+    top:50%;
 }
 
 .book-card.disable {
@@ -181,7 +182,7 @@
 
 .form-box  input[type='text'], .form-box input[type='number'] {
     margin-top: 7px;
-    font-size: 1.65rem;
+    font-size: 1.45rem;
     border: 1px solid black;
     border-radius: 5px;
     padding:3px;
@@ -204,11 +205,12 @@
 }
 
 .form-button {
-    width:17.5rem;
-    height:3rem;
+    width:15rem;
+    height:2.75rem;
     font-size: 1.5rem;
     border: 1px solid black;
     font-weight: 500;
+    border-radius: 5px;
 }
 
 #book-name::before {
